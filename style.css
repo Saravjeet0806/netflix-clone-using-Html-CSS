@@ -1,30 +1,58 @@
-*{
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.main{
-    background-image: url("assets/images/bg.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: max(1200px, 100vw);
-    height: 80vh;
-    position: relative;
+.main {
+  background-image: url("assets/images/netflixbg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1000px, 100vw);
+  height: 80vh;
+  position: relative;
 }
 
-.main .box{
-    height: 80vh;
-    width: 100%;
-    background-color: black;
-    opacity: 0.44;
-    position: absolute;
-    top: 0;
+.main .box {
+  height: 80vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.44;
+  position: absolute;
+  top: 0;
 }
-nav{
-    max-width: 80vw;
-    margin: auto;   
+nav {
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+nav img {
+  width: 115px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.hero{
+    font-family: "Martel Sans", sans-serif;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+     position: relative; /* pop out hoke aye */
+}
+.hero :first-child{
+    font-weight: 900;
+    font-size: 48px;
 }
