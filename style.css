@@ -83,8 +83,12 @@ nav button {
 }
 .btn {
   padding: 3px 8px;
-  font-weight: bold;
-  background-color: white;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(245, 240, 240, 0.089);
+  border: 1px solid rgba(255, 255, 255, 0.121);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .btn-red {
@@ -101,8 +105,9 @@ nav button {
 }
 
 .main input {
+  color: white;
   padding: 7px 125px 10px 9px;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 14px;
   border-radius: 4px;
   background-color: rgba(23, 23, 23, 0.7);
@@ -114,4 +119,46 @@ nav button {
   align-items: center;
   justify-content: center;
   gap: 16px;
+}
+
+.first{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  color: white;
+  margin: auto;
+  padding-top: 10px;
+
+}
+ 
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 30vw;
+  position: relative;
+  z-index: 10;
+ 
+}
+
+.secImg video {
+  width: 90%;
+  position: absolute;
+  top: 51px;
+  right: 0;
+}
+
+section.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+section.first > div :nth-child(2) {
+  font-size: 24px;
+}
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0px;
 }
